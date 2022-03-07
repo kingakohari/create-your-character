@@ -4,9 +4,30 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
 	<title>This is FRONTEND</title>
 </head>
 <body>
-	<div id="root"></div>
+	<div class='container' id="root">
+		<form name="myForm">
+			<select name="mySelect" id="selectBox">
+							<option id="select0" data-desc="a womans coat" value=0>Women's coat</option>
+							<option id="select1" data-desc="a mens winter coat" value=1>Men's coat</option>
+							<option id="select2" data-desc="a kids toy to play with" value=2>Kid's toys</option>
+							<option id="select3" data-desc="a classic mixture" value=3>Classic mixture</option>
+							<option id="select4" data-desc="a beautiful gold earring" value=4>Gold Earing</option>
+						</select>
+			<INPUT TYPE="button" VALUE="Go" id="go">
+			</INPUT>
+		</form>
+		<HR size="4" color="red" id="hr">
+		
+		<img id="holder" /><br/>
+		<span id="desc"></span><br/><br/>
+		
+		<button id="prev" onclick="prvs()" style="display:none">Previous</button>
+		<button id="next" onclick="nxt()" style="display:none">Next</button>
+	</div>
 </body>
 </html>
