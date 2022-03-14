@@ -6,17 +6,20 @@ body {
     }
     
 img {
+    width: 500px;
+}
+
+#holderGender{
     width: 200px;
 }
 
-.container {
-    border: inset;
-    background-color: rgba(255, 234, 134, 0.9);
-}
 
-#selectBox {
-    margin-left: 210px;
-    width: 160px;
+
+#selectBoxGender,
+#selectBoxRace,
+#selectBoxClass {
+    margin-left: 50px;
+    width: 180px;
 }
 
 #below_hr {

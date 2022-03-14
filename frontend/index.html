@@ -9,25 +9,70 @@
 	<title>This is FRONTEND</title>
 </head>
 <body>
-	<div class='container' id="root">
-		<form name="myForm">
-			<select name="mySelect" id="selectBox">
-							<option id="select0" data-desc="a womans coat" value=0>Women's coat</option>
-							<option id="select1" data-desc="a mens winter coat" value=1>Men's coat</option>
-							<option id="select2" data-desc="a kids toy to play with" value=2>Kid's toys</option>
-							<option id="select3" data-desc="a classic mixture" value=3>Classic mixture</option>
-							<option id="select4" data-desc="a beautiful gold earring" value=4>Gold Earing</option>
-						</select>
-			<INPUT TYPE="button" VALUE="Go" id="go">
-			</INPUT>
-		</form>
-		<HR size="4" color="red" id="hr">
+	<div class="container" id="root">
+
+		<h1>Create your character</h1>
+
+		<div id="name">
+			<label for="charname">What is your character's name?</label>
+			<input type="text" id="charname" name="name" placeholder="Type name here">
+		</div>	
+
+		<div id="selector">
+			<form name="myForm">
+				<label for="gender">Select your character's gender</label><br>
+				<select name="mySelect" id="selectBoxGender">
+								<option id="select0" data-desc="Male" value=0>Male</option>
+								<option id="select1" data-desc="Female" value=1>Female</option>
+								<option id="select2" data-desc="Transgender" value=2>Transgender</option>
+							</select>
+							
+				<input type="button" value="Select" id="goGender">
+			</form>
+			
+			
+			<img id="holderGender" /><br/>
+			<span id="descGender"></span><br/><br/>
+
+			<form name="myForm2">
+				<label for="race">Select your character's race</label><br>
+				<select name="mySelect" id="selectBoxRace">
+								<option id="select3" data-desc="Tough Human" value=3>Human</option>
+								<option id="select4" data-desc="Charming Elf" value=4>Elf</option>
+								<option id="select5" data-desc="Corrupted Orc" value=5>Orc</option>
+								<option id="select6" data-desc="Grumpy Troll" value=6>Troll</option>
+								<option id="select7" data-desc="Loyal Dwarf" value=7>Dwarf</option>
+							</select>
+				
+				<input type="button" value="Select" id="goRace">
+			</form>
 		
-		<img id="holder" /><br/>
-		<span id="desc"></span><br/><br/>
-		
-		<button id="prev" onclick="prvs()" style="display:none">Previous</button>
-		<button id="next" onclick="nxt()" style="display:none">Next</button>
+			
+			<img id="holderRace" /><br/>
+			<span id="descRace"></span><br/><br/>
+
+			<form name="myForm3">
+				<label for="class">Select your character's class</label><br>
+				<select name="mySelect" id="selectBoxClass">
+								<option id="select8" data-desc="Watchful Hunter" value=8>Hunter</option>
+								<option id="select9" data-desc="Wise Priest" value=9>Priest</option>
+								<option id="select10" data-desc="Savage Assassin" value=10>Assassin</option>
+								<option id="select11" data-desc="Spiritual Wizard" value=11>Wizard</option>
+								<option id="select12" data-desc="Evil Necromancer" value=12>Necromancer</option>
+							</select>
+				
+				<input type="button" value="Select" id="goClass">
+			</form>
+			
+			
+			<img id="holderClass" /><br/>
+			<span id="descClass"></span><br/><br/>
+		</div>
+
+		<div id="create">
+			<button>Create character</button>
+		</div>
+
 	</div>
 </body>
 </html>
