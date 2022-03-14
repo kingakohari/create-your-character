@@ -24,6 +24,7 @@ const loadEvent = () => {
     imgArrayRace[4] = new Image();
     imgArrayRace[4] = "dwarves.jpg"
 
+
     const imgArrayClass  = new Array();
 
     imgArrayClass[0] = new Image();
@@ -91,7 +92,7 @@ const loadEvent = () => {
             } else if (document.getElementById("selectBoxRace").value == 7) {
                 holderRace.src = imgArrayRace[4];
                 descRace.innerHTML = document.getElementById("select7").getAttribute("data-desc");
-        }
+            }
     }
 
     function loadItem3() {
@@ -115,7 +116,7 @@ const loadEvent = () => {
             } else if (document.getElementById("selectBoxClass").value == 12) {
                 holderClass.src = imgArrayClass[4];
                 descClass.innerHTML = document.getElementById("select12").getAttribute("data-desc");
-        }
+            }
     }
 } 
 
