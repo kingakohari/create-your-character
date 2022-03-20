@@ -26,12 +26,19 @@ h1 {
     margin-left: 32%;
 }
 
-#charname {
+#charName {
     margin: 0 15px;
     padding-left: 8px;
     width: 250px;
     font-size: 15px;
     font-family: monospace;
+}
+
+h3 {
+    display: flex;
+    margin-left: 40%;    
+    font-size: 35px;
+    text-decoration: underline overline;
 }
     
 #selector {

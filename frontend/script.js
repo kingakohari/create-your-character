@@ -51,6 +51,14 @@ const loadEvent = () => {
     let holderRace = document.getElementById("holderRace");
     let holderClass = document.getElementById("holderClass");
 
+    const yourName = document.querySelector("h3");
+
+    function updateValue(e) {
+        yourName.innerHTML = e.target.value;
+    }
+
+    charName.addEventListener("input", updateValue);
+
     goGender.addEventListener("click", loadItem);
     goRace.addEventListener("click", loadItem2);
     goClass.addEventListener("click", loadItem3);
